@@ -1,0 +1,1044 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dra. Rachel Ximenes - Saúde Materno-Infantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rosa-claro': '#f8d0d9',
+                        'rosa-medio': '#f5b6c4',
+                        'rosa-escuro': '#e4899c',
+                        'azul-claro': '#c1e3f2',
+                        'azul-medio': '#a3d5ea',
+                        'azul-escuro': '#7ab9d4',
+                        'verde-agua': '#b8e6e1',
+                        'verde-agua-medio': '#8ed8d0',
+                        'verde-agua-escuro': '#5ebfb5',
+                        'laranja-beige': '#f9e2d2',
+                        'laranja-beige-medio': '#f5d4bc',
+                        'laranja-beige-escuro': '#e9c4a7',
+                        'cinza-claro': '#f8f9fa',
+                        'cinza-medio': '#e9ecef',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'source': ['Source Sans Pro', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 25px -3px rgba(0, 0, 0, 0.05)',
+                        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.1)',
+                        'button': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                        'elevated': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            scroll-behavior: smooth;
+            color: #4a5568;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(248,208,217,0.4) 0%, rgba(193,227,242,0.4) 50%, rgba(184,230,225,0.4) 100%);
+        }
+        .gradient-overlay {
+            background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.7));
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            font-size: 60px;
+            color: #f8d0d9;
+            font-family: 'Montserrat', sans-serif;
+            opacity: 0.5;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f5b6c4;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #f5b6c4, #a3d5ea);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(245, 182, 196, 0.4);
+        }
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .wave-divider {
+            position: relative;
+            height: 70px;
+            overflow: hidden;
+        }
+        .wave-divider svg {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #f5b6c4, #a3d5ea);
+            margin: 15px auto 0;
+            border-radius: 3px;
+        }
+        .section-heading-left::after {
+            margin: 15px 0 0;
+        }
+        .feature-icon {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+        }
+        .scroll-top {
+            transition: all 0.3s ease;
+        }
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+        .input-field {
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            border-color: #f5b6c4;
+            box-shadow: 0 0 0 3px rgba(245, 182, 196, 0.2);
+        }
+        .header-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f8d0d9' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .service-icon-container {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover .service-icon-container {
+            transform: scale(1.1);
+        }
+        .image-gallery-item {
+            overflow: hidden;
+        }
+        .image-gallery-item img {
+            transition: all 0.5s ease;
+        }
+        .image-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .contact-info-card {
+            transition: all 0.3s ease;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #f8d0d9, #c1e3f2, #b8e6e1, #f9e2d2);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .footer-link {
+            transition: all 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #f5b6c4;
+            transform: translateX(3px);
+        }
+        .footer-social-icon {
+            transition: all 0.3s ease;
+        }
+        .footer-social-icon:hover {
+            transform: translateY(-3px);
+        }
+        .footer-wave {
+            position: absolute;
+            top: -70px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .footer-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 70px;
+        }
+        .footer-wave .shape-fill {
+            fill: #2d3748;
+        }
+        .appointment-form-container {
+            background: linear-gradient(135deg, rgba(248,208,217,0.1) 0%, rgba(193,227,242,0.1) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .appointment-form input,
+        .appointment-form textarea,
+        .appointment-form select {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .appointment-form input:focus,
+        .appointment-form textarea:focus,
+        .appointment-form select:focus {
+            border-color: #f5b6c4;
+            box-shadow: 0 0 0 3px rgba(245, 182, 196, 0.2);
+        }
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            transform: translateX(5px);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        .insurance-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .insurance-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .gallery-image {
+            transition: all 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .scroll-indicator {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .highlight-box {
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        @keyframes shine {
+            0% {
+                left: -50%;
+                top: -50%;
+            }
+            100% {
+                left: 150%;
+                top: 150%;
+            }
+        }
+        .service-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(245, 182, 196, 0.1);
+            line-height: 1;
+        }
+        .service-card:hover .service-number {
+            color: rgba(245, 182, 196, 0.2);
+        }
+        .blob-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(248,208,217,0.3) 0%, rgba(248,208,217,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: blob-move 20s infinite alternate ease-in-out;
+        }
+        @keyframes blob-move {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(5%, 10%) scale(1.1);
+            }
+            66% {
+                transform: translate(-5%, -5%) scale(0.9);
+            }
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white header-shadow z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo -->
+                <div class="mr-3">
+                    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#f8d0d9" />
+                        <path d="M12,20 Q20,10 28,20 Q20,30 12,20" stroke="#a3d5ea" stroke-width="2" fill="#b8e6e1" />
+                        <circle cx="20" cy="20" r="8" fill="white" fill-opacity="0.3" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-montserrat font-semibold text-gray-800">Clínica Dra. Rachel Ximenes</h1>
+                    <p class="text-xs text-gray-500 tracking-wider">SAÚDE MATERNO-INFANTIL</p>
+                </div>
+            </div>
+            
+           
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const mobileMenuButton = document.getElementById('mobile-menu-button');
+                    const mobileMenu = document.getElementById('mobile-menu');
+
+                    // Adiciona um evento de clique ao botão do menu móvel
+                    mobileMenuButton.addEventListener('click', function () {
+                        // Alterna a classe 'hidden' no menu móvel
+                        // Se 'hidden' estiver presente, ele remove, tornando o menu visível.
+                        // Se 'hidden' não estiver presente, ele adiciona, escondendo o menu.
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    // Opcional: Fechar o menu móvel ao clicar em um link dentro dele
+                    const mobileLinks = mobileMenu.querySelectorAll('a');
+                    mobileLinks.forEach(link => {
+                        link.addEventListener('click', function() {
+                            mobileMenu.classList.add('hidden'); // Esconde o menu
+                        });
+                    });
+                });
+            </script>
+
+        
+        <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        
+        <nav class="hidden md:flex space-x-8">
+            <a href="#inicio" class="nav-link text-gray-700 hover:text-rosa-medio font-medium">Início</a>
+            <a href="#sobre" class="nav-link text-gray-700 hover:text-rosa-medio font-medium">Sobre</a>
+            <a href="#servicos" class="nav-link text-gray-700 hover:text-rosa-medio font-medium">Serviços</a>
+            <a href="#estrutura" class="nav-link text-gray-700 hover:text-rosa-medio font-medium">Estrutura</a>
+            <a href="#contato" class="nav-link text-gray-700 hover:text-rosa-medio font-medium">Contato</a>
+            <a href="#contato" class="btn-primary px-5 py-2 rounded-full text-white font-medium shadow-md">Agendar</a>
+        </nav>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-white w-full border-t border-gray-100">
+        <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+            <a href="#inicio" class="text-gray-700 hover:text-rosa-medio py-2 font-medium">Início</a>
+            <a href="#sobre" class="text-gray-700 hover:text-rosa-medio py-2 font-medium">Sobre</a>
+            <a href="#servicos" class="text-gray-700 hover:text-rosa-medio py-2 font-medium">Serviços</a>
+            <a href="#estrutura" class="text-gray-700 hover:text-rosa-medio py-2 font-medium">Estrutura</a>
+            <a href="#contato" class="text-gray-700 hover:text-rosa-medio py-2 font-medium">Contato</a>
+            <a href="#contato" class="btn-primary text-center px-5 py-2 rounded-full text-white font-medium shadow-md">Agendar Consulta</a>
+        </div>
+    </div>
+
+    </header>
+<section id="inicio" class="pt-28 md:pt-32 pb-16 md:pb-24 relative overflow-hidden
+            bg-[url('bloggif_683d001c2cc25.gif')] bg-cover bg-center bg-no-repeat">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/50 to-transparent/30"></div>
+    
+    <div class="blob-bg top-0 left-0"></div>
+    <div class="blob-bg bottom-0 right-0"></div>
+    
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <span class="inline-block py-1 px-3 rounded-full bg-rosa-claro bg-opacity-30 text-rosa-escuro text-sm font-medium mb-4">Clínica Especializada</span>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight mb-4">
+                Cuidado Completo para Mães e Bebês em Camocim
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                Um espaço acolhedor dedicado à saúde e bem-estar materno-infantil, com atendimento humanizado e personalizado.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contato" class="btn-primary text-center px-8 py-3 rounded-full text-white font-medium shadow-button">
+                    Agendar Consulta
+                </a>
+                <a href="#servicos" class="btn-secondary bg-white text-center px-8 py-3 rounded-full text-gray-700 font-medium border border-gray-200 hover:border-rosa-medio transition-all">
+                    Nossos Serviços
+                </a>
+            </div>
+            
+            <div class="hidden md:flex items-center mt-16 scroll-indicator">
+                <span class="text-gray-500 mr-2">Deslize para descobrir</span>
+                <svg class="w-5 h-5 text-rosa-medio" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</section>
+
+<div class="container mx-auto px-4 mt-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg p-6 shadow-soft text-center transform transition-all hover:scale-105">
+                <div class="text-3xl font-bold text-rosa-escuro mb-1">5+</div>
+                <p class="text-gray-600">Anos de Experiência</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-soft text-center transform transition-all hover:scale-105">
+                <div class="text-3xl font-bold text-azul-escuro mb-1">1000+</div>
+                <p class="text-gray-600">Pacientes Atendidos</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-soft text-center transform transition-all hover:scale-105">
+                <div class="text-3xl font-bold text-verde-agua-escuro mb-1">6</div>
+                <p class="text-gray-600">Serviços Especializados</p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-soft text-center transform transition-all hover:scale-105">
+                <div class="text-3xl font-bold text-laranja-beige-escuro mb-1">100%</div>
+                <p class="text-gray-600">Satisfação dos Pacientes</p>
+            </div>
+        </div>
+    </div>
+    <!-- Services Highlights -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-azul-claro bg-opacity-30 text-azul-escuro text-sm font-medium mb-3">Nossos Cuidados</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3 section-heading">Cuidados Especiais</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos atendimento especializado e humanizado para garantir o melhor cuidado para mães e bebês.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg p-8 shadow-card border border-gray-100 transition-all duration-300 relative">
+                    <span class="service-number">01</span>
+                    <div class="service-icon-container bg-rosa-claro w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-rosa-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-3">Pediatria Geral</h3>
+                    <p class="text-gray-600 text-center">Acompanhamento completo da saúde e desenvolvimento do seu filho.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg p-8 shadow-card border border-gray-100 transition-all duration-300 relative">
+                    <span class="service-number">02</span>
+                    <div class="service-icon-container bg-azul-claro w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-azul-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-3">Puericultura</h3>
+                    <p class="text-gray-600 text-center">Monitoramento do crescimento e desenvolvimento infantil desde o nascimento.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg p-8 shadow-card border border-gray-100 transition-all duration-300 relative">
+                    <span class="service-number">03</span>
+                    <div class="service-icon-container bg-verde-agua w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-verde-agua-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-3">Aleitamento Materno</h3>
+                    <p class="text-gray-600 text-center">Orientação e suporte para uma amamentação saudável e tranquila.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg p-8 shadow-card border border-gray-100 transition-all duration-300 relative">
+                    <span class="service-number">04</span>
+                    <div class="service-icon-container bg-laranja-beige w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-laranja-beige-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 text-center mb-3">Vacinação</h3>
+                    <p class="text-gray-600 text-center">Acompanhamento do calendário vacinal para proteção completa.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#servicos" class="inline-flex items-center text-rosa-escuro hover:text-rosa-medio font-medium transition-all">
+                    Ver todos os serviços
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Clinic Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-rosa-claro rounded-full opacity-50"></div>
+                        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-azul-claro rounded-full opacity-50"></div>
+                       <div class="relative bg-white p-8 rounded-2xl shadow-card">
+
+                        <style>
+                            .p-8 {
+                                padding: 0rem;
+                            }
+                            .h-64 {
+                                height: 30rem;
+                            }
+                        </style>
+                                            
+                        <img src="bloggif_683d03f245627.gif" 
+                            alt="Banner Ilustrativo da Clínica" 
+                            class="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/333333?text=Erro+ao+Carregar+Imagem';">
+                    </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-16">
+                    <span class="inline-block py-1 px-3 rounded-full bg-verde-agua bg-opacity-30 text-verde-agua-escuro text-sm font-medium mb-3">Nossa Clínica</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 section-heading section-heading-left">Sobre Nossa Clínica</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A Clínica Dra. Rachel Ximenes é um espaço dedicado à saúde materno-infantil em Camocim, Ceará. 
+                        Nosso compromisso é oferecer atendimento humanizado e de excelência, com foco no bem-estar 
+                        integral de mães e bebês.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Contamos com uma estrutura moderna e acolhedora, projetada para proporcionar conforto e 
+                        tranquilidade durante as consultas e procedimentos. Nossa equipe é formada por profissionais 
+                        qualificados e dedicados, sempre prontos para atender com atenção e carinho.
+                    </p>
+                    
+                    <div class="flex items-center mb-10 bg-white p-4 rounded-lg shadow-soft border-l-4 border-rosa-medio">
+                        <svg class="w-8 h-8 text-rosa-medio mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                        </svg>
+                        <p class="text-gray-700 font-medium italic">"Cuidar com amor, tratar com ciência."</p>
+                    </div>
+                    
+                    <a href="#sobre" class="btn-primary inline-block px-8 py-3 rounded-full text-white font-medium shadow-button">
+                        Conheça Nossa História
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-3 rounded-full bg-laranja-beige bg-opacity-30 text-laranja-beige-escuro text-sm font-medium mb-3">Depoimentos</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3 section-heading">O Que Dizem Nossos Pacientes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A confiança e satisfação das famílias que atendemos são nosso maior orgulho.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-card border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-rosa-claro rounded-full flex items-center justify-center mr-4">
+                            <span class="text-rosa-escuro font-bold text-xl">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Maria Silva</h4>
+                            <p class="text-sm text-gray-500">Mãe do Pedro, 2 anos</p>
+                        </div>
+                        <div class="ml-auto flex">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic pl-6 leading-relaxed">
+                        "A Dra. Rachel é uma excelente profissional! Sempre atenciosa e carinhosa com meu filho. 
+                        O ambiente da clínica é muito acolhedor, o que deixa as crianças mais tranquilas durante as consultas. 
+                        Recomendo a todos os pais de Camocim!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-card border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-azul-claro rounded-full flex items-center justify-center mr-4">
+                            <span class="text-azul-escuro font-bold text-xl">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Juliana Costa</h4>
+                            <p class="text-sm text-gray-500">Mãe da Sofia, 8 meses</p>
+                        </div>
+                        <div class="ml-auto flex">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic pl-6 leading-relaxed">
+                        "Desde a gravidez, a Dra. Rachel me acompanha com muita dedicação. Suas orientações sobre 
+                        amamentação foram fundamentais para mim. O atendimento é sempre pontual e a clínica é muito 
+                        bem organizada."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-card border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-14 h-14 bg-verde-agua rounded-full flex items-center justify-center mr-4">
+                            <span class="text-verde-agua-escuro font-bold text-xl">C</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Carlos Mendes</h4>
+                            <p class="text-sm text-gray-500">Pai da Laura, 1 ano</p>
+                        </div>
+                        <div class="ml-auto flex">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic pl-6 leading-relaxed">
+                        "A Dra. Rachel tem um dom especial para lidar com crianças. Minha filha, que normalmente 
+                        fica ansiosa em consultórios médicos, se sente à vontade com ela. As explicações são sempre 
+                        claras e detalhadas."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contato" class="btn-primary inline-block px-8 py-3 rounded-full text-white font-medium shadow-button">
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="#f8f9fa" d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+        </svg>
+    </div>
+
+    <!-- About Dr. Rachel Section -->
+    <section id="sobre" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/5 mb-12 md:mb-0">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-full h-full bg-azul-claro rounded-full opacity-20"></div>
+                        <div class="relative bg-white rounded-full p-4 shadow-card">
+                           <div class="relative bg-white p-8 rounded-2xl shadow-card">
+        <img src="385868891_851208789981850_6292711324961375611_n.jpeg" 
+            alt="Banner de Doutor ou Profissional de Saúde" 
+            class="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+            onerror="this.onerror=null;this.src='https://placehold.co/400x400/CCCCCC/333333?text=Erro+ao+Carregar+Imagem';">
+    </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-3/5 md:pl-16">
+                    <span class="inline-block py-1 px-3 rounded-full bg-rosa-claro bg-opacity-30 text-rosa-escuro text-sm font-medium mb-3">Conheça a Doutora</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 section-heading section-heading-left">Dra. Rachel Ximenes</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Médica pediatra dedicada à saúde e bem-estar de crianças e adolescentes, com formação especializada 
+                        e constante atualização nas melhores práticas da pediatria moderna. Com uma abordagem humanizada, 
+                        a Dra. Rachel prioriza o atendimento personalizado e o vínculo com as famílias.
+                    </p>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Formação e Experiência</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <div class="bg-rosa-claro rounded-full p-1 mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-rosa-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span>Graduação em Medicina pela Universidade Federal do Ceará</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-rosa-claro rounded-full p-1 mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-rosa-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span>Residência em Pediatria pelo Hospital Infantil Albert Sabin</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-rosa-claro rounded-full p-1 mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-rosa-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span>Especialização em Saúde Materno-Infantil</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-rosa-claro rounded-full p-1 mr-3 mt-1">
+                                    <svg class="w-4 h-4 text-rosa-escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span>Membro da Sociedade Brasileira de Pediatria</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-10 bg-white p-6 rounded-xl shadow-soft border-l-4 border-azul-medio">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Filosofia de Atendimento</h3>
+                        <p class="text-gray-600 italic leading-relaxed">
+                            "Acredito que cada criança é única e merece um atendimento personalizado. Meu compromisso 
+                            é oferecer cuidado integral, aliando conhecimento técnico com acolhimento e empatia, 
+                            sempre em parceria com as famílias."
+                        <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'949308a330dbba1a',t:'MTc0ODgyNjIzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+
+
+
+<!------------------------------------------------------>
+ <section class="py-8">
+    <div class="container mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-80 w-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9079352219287!2d-40.8281373!3d-3.1190518000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ebb90065483885%3A0xbb001409e9ae61fe!2sCl%C3%ADnica%20Dra.%20Rachel%20Ximenes!5e0!3m2!1spt-BR!2sbr!4v1748830752501!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------------------>
+<style>
+    .bg-\[\#D4AF37\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 208 217);
+}
+</style>
+
+
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-navy mb-2">Entre em Contato</h2>
+                <div class="w-24 h-1 bg-[#D4AF37] mx-auto mb-6 gold-shine"></div>
+                <p class="text-gray-700 max-w-3xl mx-auto">Estamos à disposição para atender você e sua família. Entre em contato para agendar consultas ou tirar dúvidas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4">Informações de Contato</h3>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="text-[#D4AF37] text-xl mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-navy">Endereço</h4>
+                                <p class="text-gray-700">Travessa Pessoa Anta, R. Cel. Raimundo Oliveira, S/N - Praça - Granja, CE, 62430-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="text-[#D4AF37] text-xl mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-navy">Telefone</h4>
+                                <p class="text-gray-700">(88)9.9715-0012</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="text-[#D4AF37] text-xl mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-navy">Horário de Funcionamento</h4>
+                                <p class="text-gray-700">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-navy mb-4">Redes Sociais</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white hover:bg-[#D4AF37] transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white hover:bg-[#D4AF37] transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white hover:bg-[#D4AF37] transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-navy mb-4">Envie uma Mensagem</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-navy mb-1">Nome</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-navy mb-1">E-mail</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-navy mb-1">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-navy mb-1">Assunto</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                                <option value="">Selecione uma opção</option>
+                                <option value="agendamento">Agendamento de Consulta</option>
+                                <option value="informacoes">Informações sobre Serviços</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-navy mb-1">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D4AF37]"></textarea>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full bg-navy hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!---------------------------------------------------->
+<style>
+    .p-6 {
+     padding: 0.0rem;
+}
+.border-azul-medio {
+    --tw-border-opacity: 1;
+    border-color: rgb(163 213 234 / var(--tw-border-opacity, 1));
+}
+.border-l-4 {
+    border-left-width: 0px;
+}
+.gap-8 {
+    gap: 2rem;
+    color: cadetblue;
+}
+
+
+</style>
+
+
+<footer class="bg-[#black] text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#inicio" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">Início</a></li>
+                    <li><a href="#sobre" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="text-gray-300 hover:text-[#00BFDF] transition duration-300">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contato</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-[#00BFDF] mr-3 mt-1"></i>
+                        <span>Travessa Pessoa Anta, R. Cel. Raimundo Oliveira, S/N - Praça - Granja, CE, 62430-000</span> </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone-alt text-[#00BFDF] mr-3 mt-1"></i>
+                        <span>(88)9.9715-0012</span> </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-clock text-[#00BFDF] mr-3 mt-1"></i>
+                        <span>Seg-Sex: 8h às 18h<br>Sáb: 8h às 12h</span> </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-400">© 2025 . Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
